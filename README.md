@@ -288,8 +288,8 @@ Response:
 
 ## Postman Koleksiyonu
 
-Tüm uç noktaları içeren Postman koleksiyonuna buradan erişebilir veya aşağıdaki adımlarla dosyayı yükleyebilirsiniz:
+Tüm uç noktaları içeren Postman koleksiyonuna buradaki dizinden erişebilir veya aşağıdaki adımlarla dosyayı yükleyebilirsiniz:
 Postman açıldıktan sonra "Import" seçeneğine tıklayın.
-İndirilen airline-ticketing-system.postman_collection.json dosyasını yükleyin.
+İndirilen Omreon.postman_collection.json dosyasını yükleyin.
 
 
