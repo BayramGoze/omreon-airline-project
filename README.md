@@ -38,7 +38,7 @@ Bu proje, bir havayolu biletleme sistemi için geliştirilmiş backend servisidi
 ### Yeni Havayolu Ekle
 - URL: `/airlines`
 - Method: `POST`
-  Request 
+- Request 
   ```
    {
     "name": "Türk Hava Yollari",
@@ -54,12 +54,12 @@ Response:
 }
 ```
 
-###Havayolu Arama
+### Havayolu Arama
 
-URL: /airlines/{id}
-Method: GET
+- URL: `/airlines/{id}`
+- Method: `GET`
 
-Response:
+- Response:
 ```
 {
     "id": 1,
@@ -67,13 +67,13 @@ Response:
     "code": "THY"
 }
 ```
-#Havaalanı İşlemleri
+# Havaalanı İşlemleri
 
-##Yeni Havaalanı Ekle
+## Yeni Havaalanı Ekle
 
-URL:/airports
-Method: POST
-Request Body:
+- URL: `/airports`
+- Method: `POST`
+- Request:
 ```
 
 {
@@ -93,10 +93,10 @@ Response:
 
 ```
 
-##Havaalanını Arama
+## Havaalanını Arama
 
-URL:/airports/{id}
-Method: GET
+- URL: `/airports/{id}`
+- Method: `GET`
 
 Response:
 ```
@@ -107,14 +107,13 @@ Response:
     "city": "Istanbul",
 }
 ```
-#Rota İşlemleri
+# Rota İşlemleri
 
-###Yeni Rota Ekle
+### Yeni Rota Ekle
 
-URL:/routes
-Method: POST
-
-Request Body:
+- URL: `/routes`
+- Method: `POST`
+- Request:
 ```
 
 {
@@ -142,12 +141,11 @@ Response:
 }
 }
 ```
-###Rota Arama
+### Rota Arama
 
-URL:/routes/{id}
-Method: GET
-
-Response:
+- URL: `/routes/{id}`
+- Method: `GET`
+- Response:
 ```
 
  {
@@ -167,10 +165,10 @@ Response:
 
 ```
 
-#Havayolu Uçuş Ekleme İşlemi
-URL:/addFlightToAirline
-Method: POST
-Request Body:
+# Havayolu Uçuş Ekleme İşlemi
+- URL: `/addFlightToAirline`
+- Method: `POST`
+- Request:
 ```
 
 {
@@ -183,12 +181,11 @@ Request Body:
 }
 ```
 
-##Havayolu Uçuş Arama
-URL:/addFlightToAirline
-Method: GET
-Request Body:
+## Havayolu Uçuş Arama
+- URL: `/addFlightToAirline`
+- Method: `GET`
+- Request:
 ```
-
 {
     "id": 1,
     "flightNumber": "XC101",
@@ -206,13 +203,13 @@ Request Body:
 
 ```
 
-#Bilet Satın Alma İşlemi
+# Bilet Satın Alma İşlemi
 
-###Yeni Bilet Satın Alma
+### Yeni Bilet Satın Alma
 
-URL:/tickets
-Method: POST
-Request Body:
+- URL: `/tickets`
+- Method: `POST`
+- Request:
 
 ```
 
@@ -250,7 +247,7 @@ Response:
 }
 ```
 
-##Postman Koleksiyonu
+## Postman Koleksiyonu
 
 Tüm uç noktaları içeren Postman koleksiyonuna buradan erişebilir veya aşağıdaki adımlarla dosyayı yükleyebilirsiniz:
 Postman açıldıktan sonra "Import" seçeneğine tıklayın.
