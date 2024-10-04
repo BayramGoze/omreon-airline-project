@@ -39,32 +39,34 @@ Bu proje, bir havayolu biletleme sistemi için geliştirilmiş backend servisidi
 - **URL:** `/airlines`
 - **Method:** `POST`
 - **Request Body:**
-  ```json
-  {
+  ```
+   {
     "name": "Türk Hava Yollari",
     "code": "THY"
-}
-  
---Response:
-  
+  }
+   ```  
+Response:
+  ```
 {
     "id": 1,
     "name": "Türk Hava Yollari",
     "code": "THY"
 }
+```
+
 ###Havayolu Arama
 
 URL: /airlines/{id}
 Method: GET
 
---Response:
-json
-
+Response:
+```
 {
     "id": 1,
     "name": "Türk Hava Yollari",
     "code": "THY"
 }
+```
 #Havaalanı İşlemleri
 
 ##Yeni Havaalanı Ekle
@@ -72,34 +74,39 @@ json
 URL:/airports
 Method: POST
 Request Body:
-json
+```
 
 {
     "name":"Frankfurt Airport",
     "code":"FRA"
 }
---Response:
+```
+Response:
 
-json
+```
 
 {
     "id": 1,
     "name": "Frankfurt Airport",
     "code": "FRA"
 }
+
+```
+
 ##Havaalanını Arama
 
 URL:/airports/{id}
 Method: GET
 
 Response:
-json
+```
 
 {
     "id": 1,
     "name": "Istanbul Airport",
     "city": "Istanbul",
 }
+```
 #Rota İşlemleri
 
 ###Yeni Rota Ekle
@@ -108,15 +115,16 @@ URL:/routes
 Method: POST
 
 Request Body:
-json
+```
 
 {
     "sourceAirportId":1,
     "destinationAirportId":2,
     "distance":1000
 }
+```
 Response:
-json
+```
 
 {
     "id": 1,
@@ -133,13 +141,14 @@ json
     "distance": 1000.0
 }
 }
+```
 ###Rota Arama
 
 URL:/routes/{id}
 Method: GET
 
 Response:
-json
+```
 
  {
         "id": 1,
@@ -155,11 +164,14 @@ json
         },
         "distance": 1000.0
     }
+
+```
+
 #Havayolu Uçuş Ekleme İşlemi
 URL:/addFlightToAirline
 Method: POST
 Request Body:
-json
+```
 
 {
     "flightNumber":"XC101",
@@ -169,11 +181,13 @@ json
     "capacity":300,
     "soldTickets":300
 }
+```
+
 ##Havayolu Uçuş Arama
 URL:/addFlightToAirline
 Method: GET
 Request Body:
-json
+```
 
 {
     "id": 1,
@@ -190,6 +204,8 @@ json
     }
 }
 
+```
+
 #Bilet Satın Alma İşlemi
 
 ###Yeni Bilet Satın Alma
@@ -198,16 +214,18 @@ URL:/tickets
 Method: POST
 Request Body:
 
-json
+```
 
 {
     "flightId":1,
     "passengerName":"Bayram Goze",
     "creditCardNumber":"5101526622112212"
 }
---Response:
 
-json
+```
+Response:
+
+```
 
 {
     "id": 1,
@@ -230,6 +248,8 @@ json
     "pnrNumber": "5KG178",
     "status": 1
 }
+```
+
 ##Postman Koleksiyonu
 
 Tüm uç noktaları içeren Postman koleksiyonuna buradan erişebilir veya aşağıdaki adımlarla dosyayı yükleyebilirsiniz:
