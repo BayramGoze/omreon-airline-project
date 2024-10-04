@@ -182,9 +182,9 @@ Response:
 ```
 
 ## Havayolu Uçuş Arama
-- URL: `/addFlightToAirline`
+- URL: `/flights/getFlightsByAirline/{airline_id}`
 - Method: `GET`
-- Request:
+- Response:
 ```
 {
     "id": 1,
