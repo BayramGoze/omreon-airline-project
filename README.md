@@ -247,6 +247,45 @@ Response:
 }
 ```
 
+# Bilet İptal Etme
+
+- URL: `/tickets/cancelTicket/{pnr_number}`
+- Method: `PUT`
+  
+- Response:  200 OK
+
+
+# Pnr Numarasına Ait Uçuşu Getirme
+
+  - URL: `/tickets/getTicketByPnrNumber/{pnr_number}`
+  - Method: `GET`  
+  - Response:
+     ```
+     {
+    "id": 5,
+    "flight": {
+        "id": 1,
+        "flightNumber": "XC101",
+        "departure": "AYT",
+        "arrival": "FRA",
+        "price": 5000.0,
+        "capacity": 300,
+        "soldTickets": 305,
+        "airline": {
+            "id": 1,
+            "name": "Sun Express",
+            "code": "SUN"
+        }
+    },
+    "passengerName": "Bayram Goze",
+    "creditCardNumber": "************2212",
+    "pnrNumber": "A9UFG8",
+    "status": 1
+    }
+     ```
+    
+
+
 ## Postman Koleksiyonu
 
 Tüm uç noktaları içeren Postman koleksiyonuna buradan erişebilir veya aşağıdaki adımlarla dosyayı yükleyebilirsiniz:
