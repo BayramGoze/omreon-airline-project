@@ -36,9 +36,9 @@ Bu proje, bir havayolu biletleme sistemi için geliştirilmiş backend servisidi
 # Havayolu İşlemleri
 
 ### Yeni Havayolu Ekle
-- **URL:** `/airlines`
-- **Method:** `POST`
-- **Request Body:**
+- URL: `/airlines`
+- Method: `POST`
+  Request 
   ```
    {
     "name": "Türk Hava Yollari",
