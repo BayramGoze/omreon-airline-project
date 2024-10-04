@@ -13,8 +13,8 @@ Bu proje, bir havayolu biletleme sistemi için geliştirilmiş backend servisidi
 
 1. **Projeyi Klonlayın**
     ```bash
-    git clone https://github.com/username/airline-ticketing-system.git
-    cd airline-ticketing-system
+    git clone https://github.com/BayramGoze/omreon-airline-project
+    cd omreon-airline-project
     ```
 
 2. **Bağımlılıkları Yükleyin**
